@@ -44,7 +44,8 @@ body {
 .school {
   width: 100%;
   height: 26.5vh;
-  object-fit: cover;
+  object-fit: fill;
+  min-width: 0%;
 }
 #header ul {
   display: flex;
@@ -120,15 +121,13 @@ table td {
   display: flex;
   justify-content: space-around;
   font-size: 1.2vh;
+  overflow: hidden;
 }
 .cardOne img {
   float: left;
 }
 .cardTwo img {
   float: left;
-}
-.cardOne p {
-  display: inline-block;
 }
 .cardTwo {
   width: 45%;
@@ -149,7 +148,7 @@ table td {
 }
 #footer button {
   font-size: 2vh;
-  padding: 0vh 6vh;
+  padding: 0vh 10%;
   height: 4vh;
   border: 0.1vh dotted black;
   background-color: transparent;
