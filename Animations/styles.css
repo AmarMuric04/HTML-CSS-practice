@@ -3,6 +3,26 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
+  margin: 0rem;
+  overflow: none;
+  animation: changeColor 5s ease-out infinite;
+}
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+  }
 }
 
 #rotatingSquare {
@@ -36,20 +56,43 @@ body {
   75% {
     background-color: blue;
     position: relative;
-    top:100vh;
+    top: 100vh;
   }
   85% {
     position: relative;
     background-color: purple;
-    top:-100vh;
+    top: -100vh;
   }
-  100%{
+  100% {
     position: relative;
     background-color: orange;
-    top:0vh;
+    top: 0vh;
   }
 }
+#circling {
+  width: 20vh;
+  height: 20vh;
+  background-color: black;
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+  animation: circling 5s ease-in infinite;
+}
 
+@keyframes circling {
+  25% {
+    transform: translate(86vw, 0vh);
+  }
+  50% {
+    transform: translate(86vw, 73vh);
+  }
+  75% {
+    transform: translate(0vw, 73vh);
+  }
+  100% {
+    transform: translate(0vw, 0vh);
+  }
+}
 /* animation-name
 animation-duration
 animation-timing-function
@@ -58,3 +101,4 @@ animation-iteration-count
 animation-direction
 animation-fill-mode
 animation-play-state
+*/
