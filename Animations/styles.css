@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#rotatingSquare {
+  width: 20vh;
+  height: 20vh;
+  background-color: transparent;
+  animation: rotating 5s ease-out infinite;
+  rotate: 45deg;
+}
+
+@keyframes rotating {
+  50% {
+    rotate: 325deg;
+  }
+}
+#bouncing {
+  width: 20vh;
+  height: 20vh;
+  background-color: green;
+  animation: bouncing 5s ease-in-out infinite;
+}
+
+@keyframes bouncing {
+  25% {
+    transform: translate(0vh, -10vh);
+  }
+  50% {
+    transform: translate(0vh, -120vh);
+    background-color: red;
+  }
+  75% {
+    background-color: blue;
+    position: relative;
+    top:100vh;
+  }
+  85% {
+    position: relative;
+    background-color: purple;
+    top:-100vh;
+  }
+  100%{
+    position: relative;
+    background-color: orange;
+    top:0vh;
+  }
+}
+
+/* animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+animation-fill-mode
+animation-play-state

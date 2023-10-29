@@ -49,8 +49,10 @@ table td {
   float: left;
 }
 .cardTwo {
+  overflow: hidden;
   width: 45%;
 }
 .cardOne {
+  overflow: hidden;
   width: 45%;
 }
