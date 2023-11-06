@@ -1,0 +1,55 @@
+body {
+    margin-top: 10vh;
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(gray.jpg), url(gray2.jpg);
+    background-size: 100vw 100vh,100vw 100vh;
+    background-repeat: no-repeat,repeat;
+    height: 190vh;
+}
+.mojNav {
+    position: absolute;
+    top: 0px;
+    height: 10vh;
+}
+.mojaTabela {
+    margin-top:10vh;
+    width: 50vw;
+}
+.mojNav {
+    width: 100vw;
+}
+.mojPassword {
+    width: 20vw;
+}
+.picWrap {
+    display: flex;
+    width: 70vh;
+    height: 70vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.picWrap img {
+    height: 30vh;
+    width: 30vh;
+    object-fit: cover;
+}
+.left {
+    position: absolute;
+    left:1vw;
+    top: 11vh;
+}.right {
+    position: absolute;
+    right:1vw;
+    top: 11vh;
+}
+footer {
+    position: absolute;
+    bottom: -100vh;
+    left: 0px;
+    right: 0px
+}
